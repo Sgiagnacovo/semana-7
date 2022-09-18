@@ -6,49 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>       
-<script>  
-///////////////Agregue una variable más y concatene su valor a frase completa///////////////  
-let  nombre= 'programación' + ' fácil.';    
-let saludo= 'Les doy la bienvenida a ';    
-let fraseCompleta = saludo + nombre;
-let pero=' pero javascript es bastante complicado xD';
+<body>
+<script>
+let diaSemana =prompt('¿Qué día es hoy?');
 
-console.log(fraseCompleta +  pero);
+switch (diaSemana) {
+    case 'lunes':
+                alert('1) Press banca plano. 2) Press banca inclinado. 3) Apertura en Contractor de pecho.');
+                break;
 
-let frase= ' javascript' + ' es un lenguaje' + ' escencial para crear' + ' sitios web poderosos';
-console.log(frase);
-console.log(fraseCompleta +  frase);
+    case 'martes':
+                alert('1) AMS - Curl de Biceps Alternado. 2) Curl Biceps en banco Scott. 3) Curl Biceps de pie con barra recta.');
+                break;
 
-///////////////Agregue un texto con un espacio entre los números y el texto./////////////
-let numeroString1 = '10';
-let numeroString2 = '20';
-let numeroString3 = '30';
+    case 'miercoles':
+                alert('1) Jalón dorsal al pecho. 2) Remo gironda agarre cerrado. 3) Remo a una mano.');
+                break;
 
-let concatenaNumeros = numeroString1 + numeroString2 + numeroString3;
-console.log(concatenaNumeros);
+    case 'jueves':
+                alert('1) Polea Alta Triceps. 2) Extension de codo por encima de la cabeza. 3)Fondo');
+                break;
 
-let textoEspacio = ' texto aca';
-console.log(concatenaNumeros + textoEspacio);
+    case 'viernes':
+                alert('1) Extensiones de Rodilla en Maquina. 2) Extension rodillas en Prensa. 3) Isquiosural tumbado.');
+                break;
 
-//De igual manera determinamos si es hombre o mujer, y modificamos el código original, para que las mujeres puedan acceder a partir de los 20, los hombres de los 18.//
-var name=prompt('¿Cuál es tu nombre?');
-console.log(name);
-var edad=prompt('que edad tiene?');
-console.log(edad);
-console.warn(name + edad);
-var genero= window.confirm('Eres Hombre?');//perdon a los X, no binarios y pansexuales etc etc
-console.log(genero);
+    case 'sabado':
+                alert('1) AMS - Vuelo Frontal. 2) AMS - Vuelo Lateral. 3) Press militar sentado con barra');
+                break;
 
-if (genero == true){
-if (edad >= 18){
-alert("Puedes entrar, eres mayor de edad.");
-} else {
-alert("No puedes entrar, eres menor de edad.");}
-} else if (edad >= 20){
-alert("Puedes entrar, eres mayor de edad.");
-} else {alert("No puedes entrar, eres menor de edad.");
+    case 'domingo':
+                alert('Running, trekking, caminata ó descanza ¡Haz lo que quieras!;-)');
+                break;
+
+    default: 
+                alert('Escribe el día de la semana en minúscula y sin acento');
 }
-</script>               
+
+
+for(i=20;i<=70;i++){
+document.write("El número es: " + i + "<br>");
+}
+
+let HolaMundo =prompt('¿Dime un número y te saludaré?');
+for(i=0;i<=HolaMundo;i++){
+document.write("HOLA MUNDO" + "<br>");
+}
+</script>
 </body>
 </html>
